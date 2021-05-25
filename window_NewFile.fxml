@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_NewFile">
+    <children>
+        <TableView fx:id="table" layoutY="80.0" prefHeight="340.0" prefWidth="600.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+            <columns>
+                <TableColumn fx:id="word" prefWidth="200.0" text="Word" />
+                <TableColumn fx:id="translation" prefWidth="200.0" text="Translation" />
+                <TableColumn fx:id="know" prefWidth="99.0" text="Know" />
+                <TableColumn fx:id="dontKnow" prefWidth="99.0" text="Don't know" />
+            </columns>
+        </TableView>
+        <TextField fx:id="tWord" layoutX="14.0" layoutY="461.0" prefHeight="25.0" prefWidth="230.0" promptText="Word" />
+        <TextField fx:id="tTranslation" layoutX="250.0" layoutY="461.0" prefHeight="25.0" prefWidth="230.0" promptText="Translation" />
+        <Button fx:id="add" layoutX="488.0" layoutY="461.0" mnemonicParsing="false" onAction="#Add" text="Add" />
+        <Button fx:id="delete" layoutX="535.0" layoutY="461.0" mnemonicParsing="false" onAction="#Delete" text="Delete" />
+      <TextField fx:id="curretDir" editable="false" layoutX="14.0" layoutY="29.0" prefHeight="25.0" prefWidth="239.0" promptText="current directory" />
+      <TextField fx:id="fileName" layoutX="285.0" layoutY="29.0" promptText="file name" />
+      <Button layoutX="444.0" layoutY="29.0" mnemonicParsing="false" onAction="#Applay" text="Applay" />
+      <Button layoutX="526.0" layoutY="29.0" mnemonicParsing="false" onAction="#save" text="Save" />
+    </children>
+</AnchorPane>

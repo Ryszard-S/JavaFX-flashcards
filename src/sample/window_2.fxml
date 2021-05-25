@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" styleClass="pane" stylesheets="@window_2.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_2">
+   <center>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextArea fx:id="text_pl" editable="false" prefHeight="200.0" prefWidth="200.0" promptText="sdf" text="hjgf" wrapText="true" GridPane.columnSpan="3">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="text_de" cache="true" prefHeight="124.0" prefWidth="174.0" promptText="sdf" styleClass="text-area" text="jfgdh" wrapText="true" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+            <Button id="i_know" fx:id="i_know" mnemonicParsing="false" onAction="#I_Know" text="I know" GridPane.rowIndex="2" />
+            <Button id="show_answer" fx:id="show_answer" mnemonicParsing="false" onAction="#show_answer" text="Show answer" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button id="i_dont_know" fx:id="i_dont_know" mnemonicParsing="false" onAction="#i_dont_know" text="I don't know" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#addNewFile" text="Add New File" />
+              <MenuItem mnemonicParsing="false" onAction="#save" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#chooseFile" text="Choose file" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#show_table" text="Edit Table" />
+              <MenuItem fx:id="fullScreen" mnemonicParsing="false" onAction="#fullScreen" text="Full Screen" />
+              <MenuItem fx:id="exitFullScreen" mnemonicParsing="false" onAction="#exitFullScreen" text="Exit Full Screen" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <TextArea fx:id="text_i_know" blendMode="DARKEN" editable="false" prefHeight="370.0" prefWidth="60.0" styleClass="text-area" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <TextArea fx:id="text_i_dont_know" blendMode="DARKEN" editable="false" prefHeight="370.0" prefWidth="60.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

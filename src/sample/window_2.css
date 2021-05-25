@@ -1,0 +1,58 @@
+.button{
+    -fx-background-color : #45425A;
+    -fx-background-radius :  2em;
+    -fx-font-size: 16px;
+    -fx-font-family: "Fira Code";
+    -fx-text-fill: #97A7B3;
+
+}
+.button:hover
+{
+    -fx-background-color : #6E698D;
+    -fx-background-radius :  3em;
+}
+.pane {
+  -fx-background-color: #97A7B3;
+}
+
+
+.text-area {
+  -fx-font-size: 30px;
+  -fx-font-family: "Fira Code";
+  -fx-font-weight: bold;
+  -fx-text-fill: #194847;
+  -fx-background-color:rgba(0, 0, 0, 0);
+  -fx-blend-mode: "DARKEN"; 
+}
+
+.text-area *.text {
+  -fx-text-alignment: center;
+}
+
+#i_know{
+  -fx-background-color : #64821D  ;
+  
+}
+#i_know:hover{
+  -fx-background-color : #6d911b  ;
+  -fx-fext-fill: #000000;
+}
+
+#i_dont_know{
+  -fx-background-color : #C53620  ;
+}
+
+#i_dont_know:hover{
+  -fx-background-color : #DE4C35  ;
+  -fx-fext-fill: #1a1818;
+}
+
+
+
+
+.increment-button, .decrement-button {
+  -fx-background-color: #465560;
+  -fx-border-color: #BEC8D0;
+  -fx-font-size: 20px;
+  -fx-background-radius: 7px;
+}

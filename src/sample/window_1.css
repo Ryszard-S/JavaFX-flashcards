@@ -1,0 +1,16 @@
+.button{
+    -fx-background-color : #45425A;
+    -fx-background-radius :  2em;
+    -fx-font-size: 16px;
+    -fx-font-family: "Fira Code";
+    -fx-text-fill: #CBD3DA;
+
+}
+.button:hover
+{
+    -fx-background-color : #6E698D  ;
+    -fx-background-radius :  3em;
+}
+.pane {
+  -fx-background-color: linear-gradient(rgba(222,239,183,0.9) 0%, rgba(151,167,179,0.9) 50%, rgba(235,148,134,0.9) 100%);
+}

@@ -1,0 +1,5 @@
+word;translation;4;0
+napiwek;das Trinkgeld;3;4
+Zatrzymaj resztę;stimmt so;5;2
+znaki test;äÄöÖßü;6;1
+piwo;das Bier;6;1
